@@ -119,5 +119,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+# MEDIA_URL = '/images/'
 CONSUMER_KEY = 'JCxBbbGjvC5qIneTUJUMUQSzY'
 CONSUMER_SECRET = 'vYDlU2JDXtSe5AtqHdZ1Pc2tf20ZGxU2AQvE1WD5ODIwGYrB01'

@@ -1,0 +1,25 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	align-items: center;
+	/*background-color: #CBE9F2;*/
+	background-color: #01aee7; 
+}
+
+#db{
+	background-color: #8EE072;
+	font-family: 'Raleway', sans-serif;
+	border-style: solid;
+	border-color: #F4F8F9;
+	border-width: 5px;
+}
+
+.forms{
+	margin-top: 250px;
+	margin-left: 150px;
+	position: fixed;
+}
+
+#textbox{
+	color: #01aee7;
+}

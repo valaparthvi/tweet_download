@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from twito_csv.settings import CONSUMER_KEY, CONSUMER_SECRET
 import tweepy
 from .forms import tweetForm
@@ -11,7 +11,7 @@ def index(request):
         if form.is_valid():
             screen_name = form.cleaned_data['user_name']
             file_type = form.cleaned_data["file_type"]
-
+            form = tweetForm()
             consumer_key = CONSUMER_KEY
             consumer_secret = CONSUMER_SECRET
             access_token = "765174214777249792-SUPa58z6NvnxbACwexOTtYPfDVxYcSz"
@@ -45,6 +45,7 @@ def index(request):
             return f
     else:
         form = tweetForm()
+
     return render(request, 'csv_app/base.html', {'form': form})
 
 
