@@ -13,6 +13,8 @@
 		{% csrf_token %}
 		{{form}}
 		<input id='db' type="submit" value="Download">
+		{% block content %}
+		{% endblock %}
 	</form>
 </body>
 </html>

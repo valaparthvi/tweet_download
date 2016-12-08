@@ -24,9 +24,12 @@ def index(request):
             print(screen_name)
 
             alltweets = []
+            try:
+                new_tweets = tweepy_user.user_timeline(
+                    screen_name=screen_name, count=200)
+            except:
+                return render(request, 'csv_app/no_user.html', {'form': form})
 
-            new_tweets = tweepy_user.user_timeline(
-                screen_name=screen_name, count=200)
             alltweets.extend(new_tweets)
             oldest = alltweets[-1].id - 1
 

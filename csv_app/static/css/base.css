@@ -23,3 +23,7 @@ body{
 #textbox{
 	color: #01aee7;
 }
+p{
+	font-size: 20px;
+	position: relative;
+}
