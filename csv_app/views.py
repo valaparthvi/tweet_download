@@ -1,10 +1,12 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 from twito_csv.settings import CONSUMER_KEY, CONSUMER_SECRET
 import tweepy
 from .forms import tweetForm
 from .dfile import file_convert
+from celery.decorators import task
 
 
+@task
 def index(request):
     if request.method == 'POST':
         form = tweetForm(request.POST)
@@ -27,8 +29,10 @@ def index(request):
             try:
                 new_tweets = tweepy_user.user_timeline(
                     screen_name=screen_name, count=200)
-            except:
+            except tweepy.TweepError:
                 return render(request, 'csv_app/no_user.html', {'form': form})
+            # except tweepy.RateLimitError:
+            #     pass
 
             alltweets.extend(new_tweets)
             oldest = alltweets[-1].id - 1
