@@ -90,3 +90,4 @@ myvenv/
 .ropeproject
 
 db.sqlite3
+keys.txt
