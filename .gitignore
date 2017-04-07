@@ -20,7 +20,6 @@ lib64/
 parts/
 sdist/
 var/
-myvenv/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -82,6 +81,7 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+myvenv/
 
 # Spyder project settings
 .spyderproject
