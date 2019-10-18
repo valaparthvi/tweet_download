@@ -94,7 +94,7 @@ python-dateutil==2.5.3
 python-debian==0.1.29
 python3-openid==3.1.0
 pytz==2016.10
-pyxdg==0.25
+pyxdg==0.26
 PyYAML==3.11
 reportlab==3.3.0
 requests==2.13.0
