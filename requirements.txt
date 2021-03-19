@@ -41,7 +41,7 @@ idna==2.1
 ipython==5.1.0
 ipython-genutils==0.1.0
 jieba3k==0.35.1
-Jinja2==2.8
+Jinja2==2.11.3
 keyring==9.1
 keyrings.alt==1.1.1
 Kivy==1.9.1
