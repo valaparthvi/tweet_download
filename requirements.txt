@@ -102,7 +102,7 @@ requests-file==1.4.1
 requests-oauthlib==0.7.0
 responses==0.5.1
 roman==2.0.0
-rsa==3.4.2
+rsa==4.1
 SecretStorage==2.3.1
 selenium==3.3.0
 sessioninstaller==0.0.0
