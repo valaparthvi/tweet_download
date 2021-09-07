@@ -70,7 +70,7 @@ performance==0.3.0
 pexpect==4.2.1
 phonenumbers==8.3.3
 pickleshare==0.7.4
-Pillow==3.3.1
+Pillow==8.3.2
 plainbox==0.25
 powerline-status==2.5
 prompt-toolkit==1.0.9
